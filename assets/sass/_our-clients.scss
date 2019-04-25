@@ -1,0 +1,110 @@
+#our-stats {
+    .stats-box {
+        margin: 0 auto 60px;
+        .stat-box {
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgb(228, 228, 228);
+            h3 {
+                font-size: 80px;
+            }
+            p {
+                color: #5f5555;
+                margin: 10px 0;
+            }
+        }
+    }
+    .our-clients {
+        margin: 230px auto 40px;
+        .container {
+            margin-left: 145px;
+            .client-meta {
+                margin: 0 0 30px 0;
+                h1 {
+                    font-size: 55px;
+                    font-weight: 700;
+                }
+            }
+        }
+        .clients {
+            height: 160px;
+            overflow: hidden;
+            &:nth-of-type(1) {
+                .logo-box {
+                    width: 70%;
+                    padding-top: 36px;
+                }
+            }
+            &:nth-of-type(2) {
+                .logo-box {
+                    width: 72%;
+                    padding-top: 36px;
+                }
+            }
+            &:nth-of-type(3) {
+                .logo-box {
+                    width: 68%;
+                }
+            }
+            &:nth-of-type(4) {
+                .logo-box {
+                    width: 60%;
+                    transform: translateY(-5%);
+                }
+            }
+            &:nth-of-type(5) {
+                .logo-box {
+                    width: 45%;
+                    padding-top: 4px;
+                }
+            }
+            &:nth-of-type(6) {
+                .logo-box {
+                    width: 50%;
+                    padding-top: 39px;
+                }
+            }
+            &:nth-of-type(7) {
+                .logo-box {
+                    width: 80%;
+                    padding-top: 64px;
+                }
+            }
+            &:nth-of-type(8) {
+                .logo-box {
+                    width: 76%;
+                    padding-top: 10px;
+                }
+            }
+        }
+        .logo-box {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            
+            img {
+                width: 100%;
+                height: auto;
+            }
+            
+
+        }
+        .see-more {
+            padding: 10px 71px;
+            background-color: #E41C34;
+            color: #fff;
+            width: 25%;
+            margin: 50px auto;
+            @extend %btn;
+            letter-spacing: 3px;
+            font-weight: 400;
+            &:hover {
+                background-color: #5f5555;
+            }
+            a {
+                color: #FFF;
+                font-weight: 500;
+                text-decoration: none;
+            }
+        }
+    }
+}

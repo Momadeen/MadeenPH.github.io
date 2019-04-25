@@ -1,0 +1,50 @@
+#our-tools {
+    width: 100%;
+    background-color: $section-background;
+    padding: 40px 0;
+    .tools-meta {
+        padding: 40px 0;
+        width: 50%;
+        h1 {
+            font-weight: bold;
+            font-size: 48px;
+            color: #404040;
+            margin: 20px 0;
+        }
+        p {
+            color: #767676;
+            line-height: 1.7;
+        }
+    }
+    .tools {
+        .tool-box {
+            width: 100%;
+            overflow: hidden;
+            height: 350px;
+            background-color: #FFF;
+            padding: 40px 20px;
+            margin: 40px 0;
+
+            .tool-image {
+                width: 40px;
+                height: 40px;
+                margin: 20px 0;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            h3 {
+                font-size: 23px;
+                letter-spacing: 2px;
+                font-weight: 400;
+                margin: 18px 0px;
+                color: #383838;
+            }
+            p {
+                margin-top: 35px;
+                color: #5a5a5a;
+            }
+        }
+    }
+}

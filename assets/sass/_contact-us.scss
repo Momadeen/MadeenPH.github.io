@@ -1,0 +1,62 @@
+#contact-us {
+    .col-md-7 {
+        h1 {
+            font-size: 65px;
+            font-weight: 700;
+            width: 61%;
+            color: #404040;
+        }
+        p {
+            width: 81%;
+            color: #757978;
+        }
+        .btn-contact-us {
+            margin: 30px 0;
+            a {
+                @extend %btn;
+                padding: 14px 50px;
+            }
+        }
+    }
+    .col-md-5 {
+        border-left: 3px solid #e8e8e8cc;
+        height: 272px;
+        padding: 40px 0px 40px 31px;
+        h5 {
+            font-size: 13px;
+            letter-spacing: 1px;
+            margin: 20px 0px;
+        }
+        .tesi-box {
+            .carousel-item {
+                p {
+                    width: 80%;
+                    line-height: 1.8;
+                    letter-spacing: 1px;
+                    color: #989898;
+                }
+                h4 {
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    margin: 15px 0;
+                    font-size: 18px;
+                    color: #404040;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    height: 108px;
+    background-color: $section-background;
+
+    .footer {
+        padding: 40px 0;
+        text-align: center;
+        h6 {
+            color: #5f5f5f;
+            font-weight: 400;
+        }
+    }
+}

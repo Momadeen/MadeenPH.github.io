@@ -1,0 +1,126 @@
+header {
+    .menu-item {
+        width: 0%;
+        position: fixed;
+        height: 0%;
+        background-color: rgb(41, 41, 41);
+        top: 0;
+        left: 0;
+        z-index: 999;
+        ul {
+            display: none;
+            list-style: none;
+            margin: 150px auto;
+            width: 100%;
+            
+
+            li {
+                padding: 20px 40px;
+                text-align: center;
+                a {
+                    color: #FFF;
+                    font-weight: bold;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font: 45px;
+                    letter-spacing: 5px;
+                }
+                
+            }
+        }
+    }
+    nav {
+        height: 250px;
+
+
+        .logo {
+            align-items: flex-start;
+            width: 100%;
+            height: 100%;
+            margin: 20px 0;
+            .navbar-brand {
+                width: 15%;
+                h2 {
+                 font-size: 20px;
+                 display: inline-block;
+                 color: $text-color;
+                 text-transform: lowercase;
+                 span {
+                     color: $btn-color;
+                 }
+                }
+                img {
+                    width: 20%;
+                    height: auto;
+                }
+             }
+        }
+
+        .menu-bar {
+            position: fixed;
+            top: 5%;
+            display: block;
+            right: 7%;
+            font-size: 18px;
+            width: 45px;
+            height: 45px;
+            background-color: #E41C34;
+            border-radius: 50%;
+            cursor: pointer;
+            color: #FFF;
+            z-index: 1000;
+
+            @keyframes popper {
+                0% {
+                    -webkit-transform: scale(.6);
+                    opacity: 0;
+                }
+            
+                50% {
+                    -webkit-transform: scale(.6);
+                    opacity: .7;
+                }
+            
+                60% {
+                    -webkit-transform: scale(.9);
+                    opacity: .9;
+                }
+            
+                70% {
+                    -webkit-transform: scale(1.1);
+                    opacity: .6;
+                }
+            
+                80% {
+                    -webkit-transform: scale(1.25);
+                    opacity: .3;
+                }
+            
+                100% {
+                    -webkit-transform: scale(1.4);
+                    opacity: 0;
+                }
+
+            }
+            .bar-border {
+                width: 45px;
+                height: 45px;
+                border: 5px solid #E41C34;
+                border-radius: 50%;
+                position: absolute;
+                top: 1%;
+                right: 0px;
+                animation: popper 1s infinite;
+            }
+            i {
+                position: absolute;
+                top: 14px;
+                right: 14px;
+                
+                &:nth-of-type(2) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
